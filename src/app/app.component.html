@@ -1,0 +1,4 @@
+<div class="todo-wrapper">
+  <app-todo-form (todoOut)="onNewTodo($event)"></app-todo-form>
+  <app-todo-clause *ngFor="let todo of todos" [todo]="todo"></app-todo-clause>
+</div>
